@@ -335,11 +335,11 @@
         <footer>
           <ul class="not-dot footer-flex">
             <li>
-              <h2>
+              <h4>
                 <a class="links logo-in-footer" href="index.html">
                   <span class="web-blue">Web</span>Studio</a
                 >
-              </h2>
+              </h4>
               <address>
                 <ul class="not-dot item-list-address">
                   <li><a class="links address">m. Warszawa, Aleje Jerozolimskie 21</a></li>
@@ -378,22 +378,22 @@
                   </svg>
                 </li>
               </ul>
-              <li>
-                <form>
-                  <label class="footer-text-element">
-                    <div>ZAPISZ SIĘ DO NEWSLETTERA</div>
-                    <input type="email" name="email" />
-                  </label>
-                  <button class="button submit-button" type="submit">Zapisz się
+            </li>
+            <li>
+              <h4 class="footer-text-element">ZAPISZ SIĘ DO NEWSLETTERA</h4>
+              <form>
+                <label class="footer-text-element">
+                  <input class="input-footer" type="email" name="email" placeholder="E-mail" />
+                  <button class="button submit-button" type="submit">
+                    Zapisz się
                     <svg viewBox="0 0 30 30" height="24px" width="24px">
                       <use href="images\icons.svg#icon-icon-send"></use>
                     </svg>
                   </button>
-                </form>
-              </li>
+                </label>
+              </form>
             </li>
           </ul>
-         
         </footer>
       </div>
     </div>
@@ -404,6 +404,65 @@
             <use href="images\icons.svg#icon-close"></use>
           </svg>
         </div>
+        <ul class="not-dot">
+          <li>
+            <h1>Zostaw swoje dane w formularzu poniżej</h1>
+          </li>
+          <li>
+            <form action="">
+              <label>
+                Imie
+                <svg viewBox="0 0 18 18" height="30px" width="30px">
+                  <use href="images\icons.svg#icon-person-icon"></use>
+                </svg>
+                <input type="text" name="imie" />
+              </label>
+              <label>
+                Telefon
+                <svg viewBox="0 0 18 18" height="30px" width="30px">
+                  <use href="images\icons.svg#icon-phone-icon"></use>
+                </svg>
+                <input type="tel" name="telefon" />
+              </label>
+              <label>
+                Email
+                <svg viewBox="0 0 18 18" height="30px" width="30px">
+                  <use href="images\icons.svg#icon-email-icon"></use>
+                </svg>
+                <input type="email" name="email" />
+              </label>
+              <label>
+                Komentarz
+                <textarea
+                  name="komentarz"
+                  id=""
+                  cols="30"
+                  rows="1"
+                  placeholder="Wprowadź tekst"
+                ></textarea>
+              </label>
+            </form>
+          </li>
+          <li class="check-box">
+            <input type="checkbox"
+            id="regulations">
+            <label for="regulations">
+              <div>
+                <svg class="hidden-check" for="regulations">
+                  <use href="images\icons.svg#icon-check-icon" ></use>
+                </svg>
+              </div>
+              <p class="check-text">Oświadczam iż akceptuję
+                <a class="links-modal" href="Regulamin"> Regulamin</a>
+                 i <a class="links-modal" href="Politykę">Politykę Prywatności</a>.</p>
+            </label>
+          </li>
+          <li>
+            <button class="button first-button" type="submit">
+              Wyślij
+            </button>
+          </li>
+        </ul>
       </div>
     </div>
     <script src="./js/modal.js"></script>
