@@ -404,32 +404,32 @@
             <use href="images\icons.svg#icon-close"></use>
           </svg>
         </div>
-        <ul class="not-dot">
-          <li>
-            <h1>Zostaw swoje dane w formularzu poniżej</h1>
-          </li>
-          <li>
-            <form action="">
+        <form action="">
+          <ul class="not-dot">
+            <li>
+              <h1>Zostaw swoje dane w formularzu poniżej</h1>
+            </li>
+            <li>
               <label>
                 Imie
                 <svg viewBox="0 0 18 18" height="30px" width="30px">
                   <use href="images\icons.svg#icon-person-icon"></use>
                 </svg>
-                <input type="text" name="imie" />
+                <input type="text" name="imie" required />
               </label>
               <label>
                 Telefon
                 <svg viewBox="0 0 18 18" height="30px" width="30px">
                   <use href="images\icons.svg#icon-phone-icon"></use>
                 </svg>
-                <input type="tel" name="telefon" />
+                <input type="tel" name="telefon" required />
               </label>
               <label>
                 Email
                 <svg viewBox="0 0 18 18" height="30px" width="30px">
                   <use href="images\icons.svg#icon-email-icon"></use>
                 </svg>
-                <input type="email" name="email" />
+                <input type="email" name="email" required />
               </label>
               <label>
                 Komentarz
@@ -441,28 +441,27 @@
                   placeholder="Wprowadź tekst"
                 ></textarea>
               </label>
-            </form>
-          </li>
-          <li class="check-box">
-            <input type="checkbox"
-            id="regulations">
-            <label for="regulations">
-              <div>
-                <svg class="hidden-check" for="regulations">
-                  <use href="images\icons.svg#icon-check-icon" ></use>
-                </svg>
-              </div>
-              <p class="check-text">Oświadczam iż akceptuję
-                <a class="links-modal" href="Regulamin"> Regulamin</a>
-                 i <a class="links-modal" href="Politykę">Politykę Prywatności</a>.</p>
-            </label>
-          </li>
-          <li>
-            <button class="button first-button" type="submit">
-              Wyślij
-            </button>
-          </li>
-        </ul>
+            </li>
+            <li class="check-box">
+              <input type="checkbox" id="regulations" required />
+              <label for="regulations">
+                <div>
+                  <svg class="hidden-check" for="regulations">
+                    <use href="images\icons.svg#icon-check-icon"></use>
+                  </svg>
+                </div>
+                <p class="check-text">
+                  Oświadczam iż akceptuję
+                  <a class="links-modal" href="Regulamin"> Regulamin</a>
+                  i <a class="links-modal" href="Politykę">Politykę Prywatności</a>.
+                </p>
+              </label>
+            </li>
+            <li>
+              <button class="button first-button" type="submit">Wyślij</button>
+            </li>
+          </ul>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
