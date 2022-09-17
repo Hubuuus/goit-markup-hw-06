@@ -420,21 +420,26 @@
                 <svg viewBox="0 0 18 18" height="30px" width="30px">
                   <use href="images\icons.svg#icon-person-icon"></use>
                 </svg>
-                <input type="text" name="imie" required />
+                <input type="text" name="imie" 
+                required pattern="^[A-Z][a-z]+$"
+                title="Wymagana wielka litera. Zabronione symbole i spacje." />
               </label>
               <label>
                 Telefon
                 <svg viewBox="0 0 18 18" height="30px" width="30px">
                   <use href="images\icons.svg#icon-phone-icon"></use>
                 </svg>
-                <input type="tel" name="telefon" required />
+                <input type="tel" name="telefon" 
+                required pattern="^[1-9]{1}[0-9]{8}$"
+                title="Podaj 9 cyfrową wartość nie zaczynającą się od 0." />
               </label>
               <label>
                 Email
                 <svg viewBox="0 0 18 18" height="30px" width="30px">
                   <use href="images\icons.svg#icon-email-icon"></use>
                 </svg>
-                <input type="email" name="email" required />
+                <input type="email" name="email" 
+                required/>
               </label>
               <label>
                 Komentarz
@@ -448,7 +453,9 @@
               </label>
             </li>
             <li class="check-box">
-              <input type="checkbox" id="regulations" required />
+              <input type="checkbox" id="regulations" 
+              required
+              title="Pole wymagane" />
               <label for="regulations">
                 <div>
                   <svg class="hidden-check" for="regulations">
