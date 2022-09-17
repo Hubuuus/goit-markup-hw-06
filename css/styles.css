@@ -281,6 +281,15 @@ body {
 .list-img >:nth-child(n+2){
   margin-left: 30px;
 }
+.list-img-p {
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 30px; */
+  margin-top: 50px;
+}
+.list-img-p >:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
 .list-img > li > div {
   background-color: rgba(47, 48, 58, 0.8);
   width: 100%;
