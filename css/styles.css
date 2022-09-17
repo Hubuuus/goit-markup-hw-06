@@ -437,10 +437,9 @@ body {
   fill: var(--text-on-dark-background);
 }
 .input-footer:required {
-  background-color: transparent;
-  background-color: #2196f3;
+  background-color: var(--brand-background-color);
 }
-.input-footer :focus {
+.input-footer:focus {
   border: red;
 }
 .footer-text-element {
